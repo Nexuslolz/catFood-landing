@@ -1,0 +1,178 @@
+.content-box__footer, .content-box__info, .content-box__wrapper, .content-box_disabled, .content-box, .content__wrapper, .content {
+  margin: 0 auto;
+  display: flex;
+  color: black;
+  font-family: "Trebuchet MS", "sans-serif";
+  font-style: normal;
+}
+
+.content {
+  flex-direction: row;
+  gap: 80px;
+  width: 100%;
+  max-width: 1440px;
+  min-width: 800px;
+  flex-wrap: wrap;
+}
+
+.content__wrapper {
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+}
+.content-box {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+          clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+  background-color: rgb(22, 152, 217);
+  padding: 6px;
+  border-radius: 12px;
+  width: 320px;
+  margin-bottom: 15px;
+  height: 430px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.content-box:hover {
+  background-color: transparent;
+  transition: 0.2s;
+}
+
+.content-box_disabled {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+          clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+  padding: 6px;
+  border-radius: 12px;
+  width: 320px;
+  height: 430px;
+  background-color: #969696;
+  cursor: not-allowed;
+}
+.content-box_disabled:hover {
+  background-color: #969696;
+}
+.content-box_disabled .content-box__mark {
+  background-color: #969696;
+}
+.content-box_disabled .content-box__wrapper {
+  opacity: 0.6;
+}
+
+#disabled {
+  color: #FFFF66;
+}
+
+.content-box_active {
+  background-color: #D91667;
+  transition: 0.2s;
+}
+.content-box_active:hover {
+  background-color: #D91667;
+  transition: 0.2s;
+}
+.content-box_active .content-box__mark {
+  background-color: #D91667;
+  transition: 0.35s;
+}
+
+.content-box__wrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+          clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+  border-radius: 12px;
+  width: 320px;
+  height: 430px;
+}
+
+.content-box__info {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+}
+
+.content-box__footer {
+  position: relative;
+}
+
+.content-box__img {
+  position: absolute;
+  top: -235px;
+  left: -190px;
+}
+
+.content-box__mark {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(22, 152, 217);
+  border-radius: 50%;
+  position: absolute;
+  top: -95px;
+  left: 65px;
+  z-index: 5;
+  transition: 0.35s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  flex-direction: column;
+  font-family: "Trebuchet MS";
+}
+
+.mark__text {
+  font-size: 16px;
+}
+
+.content-box__header {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  margin: 0;
+}
+
+.content-box__subheader {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.content-box__text {
+  font-family: "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.content-box__text-footer {
+  color: white;
+  font-weight: 100;
+  width: 320px;
+  text-align: center;
+}
+
+.content-box__link {
+  color: #1698D9;
+  text-decoration: none;
+  border-bottom: 1px dashed #1698D9;
+}
